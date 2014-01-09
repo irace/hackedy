@@ -19,6 +19,13 @@
 		93567720187E5F080054A5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567708187E5F080054A5F5 /* UIKit.framework */; };
 		93567728187E5F080054A5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93567726187E5F080054A5F5 /* InfoPlist.strings */; };
 		9356772A187E5F080054A5F5 /* HackedyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567729187E5F080054A5F5 /* HackedyTests.m */; };
+		93567735187E5F7C0054A5F5 /* HCKRNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567734187E5F7C0054A5F5 /* HCKRNewsViewController.m */; };
+		93567738187E61AD0054A5F5 /* HCKRPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567737187E61AD0054A5F5 /* HCKRPost.m */; };
+		9356773E187E64AD0054A5F5 /* NSArray+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356773D187E64AD0054A5F5 /* NSArray+Blocks.m */; };
+		93567741187E660F0054A5F5 /* NSObject+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567740187E660F0054A5F5 /* NSObject+Safety.m */; };
+		93567744187E689C0054A5F5 /* HCKRAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567743187E689C0054A5F5 /* HCKRAPIClient.m */; };
+		93567748187E6B280054A5F5 /* HCKRPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567747187E6B280054A5F5 /* HCKRPostViewController.m */; };
+		9C462E45A3A048F1AB67AC45 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C47232EB304A85B3C84087 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AB9882811D64D29A39A9B4B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		93567701187E5F080054A5F5 /* Hackedy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackedy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93567704187E5F080054A5F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93567706187E5F080054A5F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +56,19 @@
 		93567725187E5F080054A5F5 /* HackedyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackedyTests-Info.plist"; sourceTree = "<group>"; };
 		93567727187E5F080054A5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93567729187E5F080054A5F5 /* HackedyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackedyTests.m; sourceTree = "<group>"; };
+		93567733187E5F7C0054A5F5 /* HCKRNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKRNewsViewController.h; sourceTree = "<group>"; };
+		93567734187E5F7C0054A5F5 /* HCKRNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKRNewsViewController.m; sourceTree = "<group>"; };
+		93567736187E61AD0054A5F5 /* HCKRPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKRPost.h; sourceTree = "<group>"; };
+		93567737187E61AD0054A5F5 /* HCKRPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKRPost.m; sourceTree = "<group>"; };
+		9356773C187E64AD0054A5F5 /* NSArray+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Blocks.h"; sourceTree = "<group>"; };
+		9356773D187E64AD0054A5F5 /* NSArray+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Blocks.m"; sourceTree = "<group>"; };
+		9356773F187E660F0054A5F5 /* NSObject+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safety.h"; sourceTree = "<group>"; };
+		93567740187E660F0054A5F5 /* NSObject+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safety.m"; sourceTree = "<group>"; };
+		93567742187E689C0054A5F5 /* HCKRAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKRAPIClient.h; sourceTree = "<group>"; };
+		93567743187E689C0054A5F5 /* HCKRAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKRAPIClient.m; sourceTree = "<group>"; };
+		93567746187E6B280054A5F5 /* HCKRPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKRPostViewController.h; sourceTree = "<group>"; };
+		93567747187E6B280054A5F5 /* HCKRPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKRPostViewController.m; sourceTree = "<group>"; };
+		95C47232EB304A85B3C84087 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,7 @@
 				93567707187E5F080054A5F5 /* CoreGraphics.framework in Frameworks */,
 				93567709187E5F080054A5F5 /* UIKit.framework in Frameworks */,
 				93567705187E5F080054A5F5 /* Foundation.framework in Frameworks */,
+				9C462E45A3A048F1AB67AC45 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +103,7 @@
 				93567723187E5F080054A5F5 /* HackedyTests */,
 				93567703187E5F080054A5F5 /* Frameworks */,
 				93567702187E5F080054A5F5 /* Products */,
+				1AB9882811D64D29A39A9B4B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +123,7 @@
 				93567706187E5F080054A5F5 /* CoreGraphics.framework */,
 				93567708187E5F080054A5F5 /* UIKit.framework */,
 				9356771D187E5F080054A5F5 /* XCTest.framework */,
+				95C47232EB304A85B3C84087 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +131,11 @@
 		9356770A187E5F080054A5F5 /* Hackedy */ = {
 			isa = PBXGroup;
 			children = (
+				93567745187E6A860054A5F5 /* Categories */,
+				93567749187E6DD40054A5F5 /* Controllers */,
+				9356774A187E6ED50054A5F5 /* Models */,
+				93567742187E689C0054A5F5 /* HCKRAPIClient.h */,
+				93567743187E689C0054A5F5 /* HCKRAPIClient.m */,
 				93567713187E5F080054A5F5 /* HCKRAppDelegate.h */,
 				93567714187E5F080054A5F5 /* HCKRAppDelegate.m */,
 				93567716187E5F080054A5F5 /* Images.xcassets */,
@@ -144,6 +173,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		93567745187E6A860054A5F5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9356773C187E64AD0054A5F5 /* NSArray+Blocks.h */,
+				9356773D187E64AD0054A5F5 /* NSArray+Blocks.m */,
+				9356773F187E660F0054A5F5 /* NSObject+Safety.h */,
+				93567740187E660F0054A5F5 /* NSObject+Safety.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		93567749187E6DD40054A5F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93567733187E5F7C0054A5F5 /* HCKRNewsViewController.h */,
+				93567734187E5F7C0054A5F5 /* HCKRNewsViewController.m */,
+				93567746187E6B280054A5F5 /* HCKRPostViewController.h */,
+				93567747187E6B280054A5F5 /* HCKRPostViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9356774A187E6ED50054A5F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93567736187E61AD0054A5F5 /* HCKRPost.h */,
+				93567737187E61AD0054A5F5 /* HCKRPost.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9356772D187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "Hackedy" */;
 			buildPhases = (
+				EA906524753B421F95734D36 /* Check Pods Manifest.lock */,
 				935676FD187E5F080054A5F5 /* Sources */,
 				935676FE187E5F080054A5F5 /* Frameworks */,
 				935676FF187E5F080054A5F5 /* Resources */,
+				C8E086B72E1F41A68DF3DB9B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +297,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C8E086B72E1F41A68DF3DB9B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA906524753B421F95734D36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		935676FD187E5F080054A5F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93567738187E61AD0054A5F5 /* HCKRPost.m in Sources */,
+				93567744187E689C0054A5F5 /* HCKRAPIClient.m in Sources */,
 				93567715187E5F080054A5F5 /* HCKRAppDelegate.m in Sources */,
+				9356773E187E64AD0054A5F5 /* NSArray+Blocks.m in Sources */,
+				93567741187E660F0054A5F5 /* NSObject+Safety.m in Sources */,
+				93567735187E5F7C0054A5F5 /* HCKRNewsViewController.m in Sources */,
 				93567711187E5F080054A5F5 /* main.m in Sources */,
+				93567748187E6B280054A5F5 /* HCKRPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +460,7 @@
 		};
 		9356772E187E5F080054A5F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB9882811D64D29A39A9B4B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +474,7 @@
 		};
 		9356772F187E5F080054A5F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB9882811D64D29A39A9B4B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,6 +547,7 @@
 				9356772F187E5F080054A5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93567730187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "HackedyTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +556,7 @@
 				93567732187E5F080054A5F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
