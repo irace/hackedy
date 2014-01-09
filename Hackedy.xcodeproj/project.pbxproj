@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93567705187E5F080054A5F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567704187E5F080054A5F5 /* Foundation.framework */; };
+		93567707187E5F080054A5F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567706187E5F080054A5F5 /* CoreGraphics.framework */; };
+		93567709187E5F080054A5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567708187E5F080054A5F5 /* UIKit.framework */; };
+		9356770F187E5F080054A5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9356770D187E5F080054A5F5 /* InfoPlist.strings */; };
+		93567711187E5F080054A5F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567710187E5F080054A5F5 /* main.m */; };
+		93567715187E5F080054A5F5 /* HCKRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567714187E5F080054A5F5 /* HCKRAppDelegate.m */; };
+		93567717187E5F080054A5F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93567716187E5F080054A5F5 /* Images.xcassets */; };
+		9356771E187E5F080054A5F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9356771D187E5F080054A5F5 /* XCTest.framework */; };
+		9356771F187E5F080054A5F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567704187E5F080054A5F5 /* Foundation.framework */; };
+		93567720187E5F080054A5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567708187E5F080054A5F5 /* UIKit.framework */; };
+		93567728187E5F080054A5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93567726187E5F080054A5F5 /* InfoPlist.strings */; };
+		9356772A187E5F080054A5F5 /* HackedyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93567729187E5F080054A5F5 /* HackedyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93567721187E5F080054A5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935676F9187E5F080054A5F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93567700187E5F080054A5F5;
+			remoteInfo = Hackedy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93567701187E5F080054A5F5 /* Hackedy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackedy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93567704187E5F080054A5F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93567706187E5F080054A5F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93567708187E5F080054A5F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9356770C187E5F080054A5F5 /* Hackedy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hackedy-Info.plist"; sourceTree = "<group>"; };
+		9356770E187E5F080054A5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93567710187E5F080054A5F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93567712187E5F080054A5F5 /* Hackedy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hackedy-Prefix.pch"; sourceTree = "<group>"; };
+		93567713187E5F080054A5F5 /* HCKRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCKRAppDelegate.h; sourceTree = "<group>"; };
+		93567714187E5F080054A5F5 /* HCKRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCKRAppDelegate.m; sourceTree = "<group>"; };
+		93567716187E5F080054A5F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9356771C187E5F080054A5F5 /* HackedyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackedyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9356771D187E5F080054A5F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93567725187E5F080054A5F5 /* HackedyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackedyTests-Info.plist"; sourceTree = "<group>"; };
+		93567727187E5F080054A5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93567729187E5F080054A5F5 /* HackedyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackedyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		935676FE187E5F080054A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93567707187E5F080054A5F5 /* CoreGraphics.framework in Frameworks */,
+				93567709187E5F080054A5F5 /* UIKit.framework in Frameworks */,
+				93567705187E5F080054A5F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93567719187E5F080054A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9356771E187E5F080054A5F5 /* XCTest.framework in Frameworks */,
+				93567720187E5F080054A5F5 /* UIKit.framework in Frameworks */,
+				9356771F187E5F080054A5F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		935676F8187E5F080054A5F5 = {
+			isa = PBXGroup;
+			children = (
+				9356770A187E5F080054A5F5 /* Hackedy */,
+				93567723187E5F080054A5F5 /* HackedyTests */,
+				93567703187E5F080054A5F5 /* Frameworks */,
+				93567702187E5F080054A5F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93567702187E5F080054A5F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93567701187E5F080054A5F5 /* Hackedy.app */,
+				9356771C187E5F080054A5F5 /* HackedyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93567703187E5F080054A5F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93567704187E5F080054A5F5 /* Foundation.framework */,
+				93567706187E5F080054A5F5 /* CoreGraphics.framework */,
+				93567708187E5F080054A5F5 /* UIKit.framework */,
+				9356771D187E5F080054A5F5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9356770A187E5F080054A5F5 /* Hackedy */ = {
+			isa = PBXGroup;
+			children = (
+				93567713187E5F080054A5F5 /* HCKRAppDelegate.h */,
+				93567714187E5F080054A5F5 /* HCKRAppDelegate.m */,
+				93567716187E5F080054A5F5 /* Images.xcassets */,
+				9356770B187E5F080054A5F5 /* Supporting Files */,
+			);
+			path = Hackedy;
+			sourceTree = "<group>";
+		};
+		9356770B187E5F080054A5F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9356770C187E5F080054A5F5 /* Hackedy-Info.plist */,
+				9356770D187E5F080054A5F5 /* InfoPlist.strings */,
+				93567710187E5F080054A5F5 /* main.m */,
+				93567712187E5F080054A5F5 /* Hackedy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93567723187E5F080054A5F5 /* HackedyTests */ = {
+			isa = PBXGroup;
+			children = (
+				93567729187E5F080054A5F5 /* HackedyTests.m */,
+				93567724187E5F080054A5F5 /* Supporting Files */,
+			);
+			path = HackedyTests;
+			sourceTree = "<group>";
+		};
+		93567724187E5F080054A5F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93567725187E5F080054A5F5 /* HackedyTests-Info.plist */,
+				93567726187E5F080054A5F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93567700187E5F080054A5F5 /* Hackedy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9356772D187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "Hackedy" */;
+			buildPhases = (
+				935676FD187E5F080054A5F5 /* Sources */,
+				935676FE187E5F080054A5F5 /* Frameworks */,
+				935676FF187E5F080054A5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackedy;
+			productName = Hackedy;
+			productReference = 93567701187E5F080054A5F5 /* Hackedy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9356771B187E5F080054A5F5 /* HackedyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93567730187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "HackedyTests" */;
+			buildPhases = (
+				93567718187E5F080054A5F5 /* Sources */,
+				93567719187E5F080054A5F5 /* Frameworks */,
+				9356771A187E5F080054A5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93567722187E5F080054A5F5 /* PBXTargetDependency */,
+			);
+			name = HackedyTests;
+			productName = HackedyTests;
+			productReference = 9356771C187E5F080054A5F5 /* HackedyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		935676F9187E5F080054A5F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HCKR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bryan Irace";
+				TargetAttributes = {
+					9356771B187E5F080054A5F5 = {
+						TestTargetID = 93567700187E5F080054A5F5;
+					};
+				};
+			};
+			buildConfigurationList = 935676FC187E5F080054A5F5 /* Build configuration list for PBXProject "Hackedy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 935676F8187E5F080054A5F5;
+			productRefGroup = 93567702187E5F080054A5F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93567700187E5F080054A5F5 /* Hackedy */,
+				9356771B187E5F080054A5F5 /* HackedyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		935676FF187E5F080054A5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9356770F187E5F080054A5F5 /* InfoPlist.strings in Resources */,
+				93567717187E5F080054A5F5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9356771A187E5F080054A5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93567728187E5F080054A5F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		935676FD187E5F080054A5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93567715187E5F080054A5F5 /* HCKRAppDelegate.m in Sources */,
+				93567711187E5F080054A5F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93567718187E5F080054A5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9356772A187E5F080054A5F5 /* HackedyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93567722187E5F080054A5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93567700187E5F080054A5F5 /* Hackedy */;
+			targetProxy = 93567721187E5F080054A5F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9356770D187E5F080054A5F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9356770E187E5F080054A5F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93567726187E5F080054A5F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93567727187E5F080054A5F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9356772B187E5F080054A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9356772C187E5F080054A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9356772E187E5F080054A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackedy/Hackedy-Prefix.pch";
+				INFOPLIST_FILE = "Hackedy/Hackedy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9356772F187E5F080054A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackedy/Hackedy-Prefix.pch";
+				INFOPLIST_FILE = "Hackedy/Hackedy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93567731187E5F080054A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackedy.app/Hackedy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackedy/Hackedy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HackedyTests/HackedyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		93567732187E5F080054A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackedy.app/Hackedy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackedy/Hackedy-Prefix.pch";
+				INFOPLIST_FILE = "HackedyTests/HackedyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		935676FC187E5F080054A5F5 /* Build configuration list for PBXProject "Hackedy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9356772B187E5F080054A5F5 /* Debug */,
+				9356772C187E5F080054A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9356772D187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "Hackedy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9356772E187E5F080054A5F5 /* Debug */,
+				9356772F187E5F080054A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93567730187E5F080054A5F5 /* Build configuration list for PBXNativeTarget "HackedyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93567731187E5F080054A5F5 /* Debug */,
+				93567732187E5F080054A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 935676F9187E5F080054A5F5 /* Project object */;
+}
