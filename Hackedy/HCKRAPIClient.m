@@ -19,39 +19,55 @@ static NSString * const APIBaseURL = @"http://node-hnapi.herokuapp.com/";
 
 @implementation HCKRAPIClient
 
-- (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)sessionConfiguration {
+#pragma mark - Initialization
+
+- (instancetype)initWithBaseURL:(NSURL *)URL sessionConfiguration:(NSURLSessionConfiguration *)configuration {
     if (self = [super init]) {
-        _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:APIBaseURL]
+        _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:URL
                                                    sessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     }
     
     return self;
 }
 
+- (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)sessionConfiguration {
+    return [self initWithBaseURL:[NSURL URLWithString:APIBaseURL] sessionConfiguration:sessionConfiguration];
+}
+
 - (id)init {
     return [self initWithSessionConfiguration:nil];
 }
 
-- (void)news:(void (^)(NSArray *posts, NSError *error))callback {
-    if (callback) {
-        [_sessionManager GET:@"news" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-            callback(responseObject, nil);
-            
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            callback(nil, error);
-        }];
-    }
+#pragma mark - API routes
+
+- (NSURLSessionDataTask *)news:(void (^)(NSArray *posts, NSError *error))callback {
+    return [self GET:@"news" parameters:nil callback:callback];
 }
 
-- (void)itemWithID:(NSString *)identifier callback:(void (^)(NSDictionary *item, NSError *error))callback {
+- (NSURLSessionDataTask *)moreNews:(void (^)(NSArray *posts, NSError *error))callback {
+    return [self GET:@"news2" parameters:nil callback:callback];
+}
+
+- (NSURLSessionDataTask *)itemWithID:(NSString *)identifier callback:(void (^)(NSDictionary *item, NSError *error))callback {
+    return [self GET:[@"item/" stringByAppendingString:identifier] parameters:nil callback:callback];
+}
+
+#pragma mark - Private
+
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
+                   parameters:(NSDictionary *)parameters
+                     callback:(void (^)(id responseObject, NSError *error))callback {
     if (callback) {
-        [_sessionManager GET:[@"item/" stringByAppendingString:identifier] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        return [_sessionManager GET:URLString parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
             callback(responseObject, nil);
             
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
             callback(nil, error);
         }];
     }
+    
+    return nil;
 }
+
 
 @end
