@@ -7,9 +7,10 @@
 //
 
 #import "HCKRAPIClient.h"
-#import "HCKRPost.h"
+#import "HCKRItem.h"
 #import "HCKRNewsViewController.h"
-#import "HCKRPostViewController.h"
+#import "HCKRNewsTableViewCell.h"
+#import "HCKRItemViewController.h"
 #import "NSArray+Blocks.h"
 
 static NSString * const CellIdentifier = @"CellIdentifier";
@@ -17,7 +18,7 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 @interface HCKRNewsViewController ()
 
 @property (nonatomic) HCKRAPIClient *client;
-@property (nonatomic) NSArray *posts;
+@property (nonatomic) NSArray *items;
 
 @end
 
@@ -28,6 +29,9 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 - (id)init {
     if (self = [super initWithNibName:nil bundle:nil]) {
         _client = [[HCKRAPIClient alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings"]
+                                                                                 style:UIBarButtonItemStylePlain target:nil action:nil];
     }
     
     return self;
@@ -42,28 +46,48 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.client news:^(NSArray *posts, NSError *error) {
-        self.posts = [posts transformedArrayUsingBlock:^HCKRPost *(NSDictionary *postDictionary) {
-            return [[HCKRPost alloc] initWithDictionary:postDictionary];
-        }];
-        
-        [self.tableView reloadData];
-    }];
+    self.view.backgroundColor = [HCKRColors backgroundColor];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.tintColor = [HCKRColors tintColor];
+    [self.refreshControl addTarget:self action:@selector(fetchNews) forControlEvents:UIControlEventValueChanged];
+    
+    [self.tableView registerClass:[HCKRNewsTableViewCell class] forCellReuseIdentifier:CellIdentifier];
+    self.tableView.separatorInset = UIEdgeInsetsZero;
+    
+    [self fetchNews];
+}
+
+#pragma mark - Private
+
+- (void)fetchNews {
+    [self.refreshControl beginRefreshing];
+    
+    [self.client news:^(NSArray *items, NSError *error) {
+        if (!error) {
+            self.items = [items transformedArrayUsingBlock:^HCKRItem *(NSDictionary *itemDictionary) {
+                return [[HCKRItem alloc] initWithDictionary:itemDictionary];
+            }];
+            
+            [self.tableView reloadData];
+        }
+        
+        [self.refreshControl endRefreshing];
+    }];
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.posts count];
+    return [self.items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    HCKRPost *post = self.posts[indexPath.row];
+    HCKRItem *item = self.items[indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.textLabel.text = post.title;
+    HCKRNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.textLabel.text = item.title;
+    cell.detailTextLabel.text = item.domain;
     
     return cell;
 }
@@ -71,9 +95,9 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    HCKRPost *post = self.posts[indexPath.row];
+    HCKRItem *item = self.items[indexPath.row];
 
-    [self.navigationController pushViewController:[[HCKRPostViewController alloc] initWithPost:post] animated:YES];
+    [self.navigationController pushViewController:[[HCKRItemViewController alloc] initWithItem:item] animated:YES];
 }
 
 @end

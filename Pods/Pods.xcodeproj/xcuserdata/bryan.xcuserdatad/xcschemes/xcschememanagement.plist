@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BRYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C8DDC2854514F7E8B160B5B</key>
+		<key>6329C4FD4CB3400DBA089FFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7891236BD34D41A5BF0BFD17</key>
+		<key>6A86C6568C2E4785962DE452</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0335B266CE344238605C8E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

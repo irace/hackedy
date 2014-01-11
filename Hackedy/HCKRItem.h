@@ -1,18 +1,18 @@
 //
-//  HCKRArticle.h
+//  HCKRItem.h
 //  Hackedy
 //
 //  Created by Bryan Irace on 1/8/14.
 //  Copyright (c) 2014 Bryan Irace. All rights reserved.
 //
 
-typedef NS_ENUM(NSUInteger, HCKRPostType) {
-    HCKRPostTypeLink,
-    HCKRPostTypeAsk,
-    HCKRPostTypeUnknown
+typedef NS_ENUM(NSUInteger, HCKRItemType) {
+    HCKRItemTypeLink,
+    HCKRItemTypeAsk,
+    HCKRItemTypeUnknown
 };
 
-@interface HCKRPost : NSObject
+@interface HCKRItem : NSObject
 
 @property (nonatomic, readonly) NSUInteger commentCount;
 @property (nonatomic, copy, readonly) NSString *domain;
@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger, HCKRPostType) {
 @property (nonatomic, readonly) NSUInteger pointCount;
 @property (nonatomic, copy, readonly) NSString *dateString;
 @property (nonatomic, copy, readonly) NSString *title;
-@property (nonatomic, readonly) HCKRPostType type;
+@property (nonatomic, readonly) HCKRItemType type;
 @property (nonatomic, copy, readonly) NSURL *URL;
 @property (nonatomic, copy, readonly) NSString *userName;
 // "content"

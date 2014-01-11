@@ -1,15 +1,15 @@
 //
-//  HCKRArticle.m
+//  HCKRItem.m
 //  Hackedy
 //
 //  Created by Bryan Irace on 1/8/14.
 //  Copyright (c) 2014 Bryan Irace. All rights reserved.
 //
 
-#import "HCKRPost.h"
+#import "HCKRItem.h"
 #import "NSObject+Safety.h"
 
-@interface HCKRPost()
+@interface HCKRItem()
 
 @property (nonatomic) NSUInteger commentCount;
 @property (nonatomic, copy) NSString *domain;
@@ -17,13 +17,13 @@
 @property (nonatomic) NSUInteger pointCount;
 @property (nonatomic, copy) NSString *dateString;
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic) HCKRPostType type;
+@property (nonatomic) HCKRItemType type;
 @property (nonatomic, copy) NSURL *URL;
 @property (nonatomic, copy) NSString *userName;
 
 @end
 
-@implementation HCKRPost
+@implementation HCKRItem
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
@@ -33,7 +33,7 @@
         _pointCount = [dictionary[@"points"] typeSafeUnsignedIntegerValue];
         _dateString = [dictionary[@"time_ago"] typeSafeStringValue];
         _title = [dictionary[@"title"] typeSafeStringValue];
-        _type = postTypeForString([dictionary[@"type"] typeSafeStringValue]);
+        _type = itemTypeForString([dictionary[@"type"] typeSafeStringValue]);
         _URL = [NSURL URLWithString:[dictionary[@"url"] typeSafeStringValue]];
         _userName = [dictionary[@"user"] typeSafeStringValue];
     }
@@ -43,15 +43,15 @@
 
 #pragma mark - Private
 
-static HCKRPostType postTypeForString(NSString *postTypeString) {
-    if ([postTypeString isEqualToString:@"link"]) {
-        return HCKRPostTypeLink;
+static HCKRItemType itemTypeForString(NSString *itemTypeString) {
+    if ([itemTypeString isEqualToString:@"link"]) {
+        return HCKRItemTypeLink;
     }
-    else if ([postTypeString isEqualToString:@"ask"]) {
-        return HCKRPostTypeAsk;
+    else if ([itemTypeString isEqualToString:@"ask"]) {
+        return HCKRItemTypeAsk;
     }
     
-    return HCKRPostTypeUnknown;
+    return HCKRItemTypeUnknown;
 }
 
 @end

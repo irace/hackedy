@@ -26,7 +26,7 @@ static NSString * const APIBaseURL = @"http://node-hnapi.herokuapp.com/";
         _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:URL
                                                    sessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     }
-    
+
     return self;
 }
 
@@ -40,16 +40,16 @@ static NSString * const APIBaseURL = @"http://node-hnapi.herokuapp.com/";
 
 #pragma mark - API routes
 
-- (NSURLSessionDataTask *)news:(void (^)(NSArray *posts, NSError *error))callback {
+- (NSURLSessionDataTask *)news:(void (^)(NSArray *items, NSError *error))callback {
     return [self GET:@"news" parameters:nil callback:callback];
 }
 
-- (NSURLSessionDataTask *)moreNews:(void (^)(NSArray *posts, NSError *error))callback {
+- (NSURLSessionDataTask *)moreNews:(void (^)(NSArray *items, NSError *error))callback {
     return [self GET:@"news2" parameters:nil callback:callback];
 }
 
 - (NSURLSessionDataTask *)itemWithID:(NSString *)identifier callback:(void (^)(NSDictionary *item, NSError *error))callback {
-    return [self GET:[@"item/" stringByAppendingString:identifier] parameters:nil callback:callback];
+    return [self GET:[@"item" stringByAppendingPathComponent:identifier] parameters:nil callback:callback];
 }
 
 #pragma mark - Private
@@ -68,6 +68,5 @@ static NSString * const APIBaseURL = @"http://node-hnapi.herokuapp.com/";
     
     return nil;
 }
-
 
 @end

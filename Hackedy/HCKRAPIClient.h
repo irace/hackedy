@@ -15,9 +15,9 @@
 
 - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)sessionConfiguration;
 
-- (NSURLSessionDataTask *)news:(void (^)(NSArray *posts, NSError *error))callback;
+- (NSURLSessionDataTask *)news:(void (^)(NSArray *items, NSError *error))callback;
 
-- (NSURLSessionDataTask *)moreNews:(void (^)(NSArray *posts, NSError *error))callback;
+- (NSURLSessionDataTask *)moreNews:(void (^)(NSArray *items, NSError *error))callback;
 
 - (NSURLSessionDataTask *)itemWithID:(NSString *)identifier callback:(void (^)(NSDictionary *item, NSError *error))callback;
 
