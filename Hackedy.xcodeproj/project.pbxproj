@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93373B5C188CC094008C8F25 /* HCKRCommentsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93373B5B188CC094008C8F25 /* HCKRCommentsButton.m */; };
 		93567705187E5F080054A5F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567704187E5F080054A5F5 /* Foundation.framework */; };
 		93567707187E5F080054A5F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567706187E5F080054A5F5 /* CoreGraphics.framework */; };
 		93567709187E5F080054A5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93567708187E5F080054A5F5 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		1AB9882811D64D29A39A9B4B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		93373B5A188CC094008C8F25 /* HCKRCommentsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCKRCommentsButton.h; sourceTree = "<group>"; };
+		93373B5B188CC094008C8F25 /* HCKRCommentsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCKRCommentsButton.m; sourceTree = "<group>"; };
 		93567701187E5F080054A5F5 /* Hackedy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackedy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93567704187E5F080054A5F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93567706187E5F080054A5F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -200,6 +203,8 @@
 				93F1012A187FA498001701DD /* HCKRColors.m */,
 				93F10126187FA3D7001701DD /* HCKRNewsTableViewCell.h */,
 				93F10127187FA3D7001701DD /* HCKRNewsTableViewCell.m */,
+				93373B5A188CC094008C8F25 /* HCKRCommentsButton.h */,
+				93373B5B188CC094008C8F25 /* HCKRCommentsButton.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				93F10128187FA3D7001701DD /* HCKRNewsTableViewCell.m in Sources */,
 				93567715187E5F080054A5F5 /* HCKRAppDelegate.m in Sources */,
 				93567735187E5F7C0054A5F5 /* HCKRNewsViewController.m in Sources */,
+				93373B5C188CC094008C8F25 /* HCKRCommentsButton.m in Sources */,
 				93567711187E5F080054A5F5 /* main.m in Sources */,
 				93567748187E6B280054A5F5 /* HCKRItemViewController.m in Sources */,
 			);

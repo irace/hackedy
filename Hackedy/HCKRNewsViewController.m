@@ -54,6 +54,7 @@ static NSString * const CellIdentifier = @"CellIdentifier";
     
     [self.tableView registerClass:[HCKRNewsTableViewCell class] forCellReuseIdentifier:CellIdentifier];
     self.tableView.separatorInset = UIEdgeInsetsZero;
+    self.tableView.rowHeight = 50;
     
     [self fetchNews];
 }
